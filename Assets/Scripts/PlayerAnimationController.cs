@@ -16,10 +16,10 @@ public class PlayerAnimationController : MonoBehaviour
     void Update()
     {
         // Check if player is moving (and not attacking or guarding)
-        bool isMoving = moveScript.IsMoving && !moveScript.IsAttacking && !moveScript.IsGuarding;
+        bool IsRunning = moveScript.IsRunning && !moveScript.IsAttacking && !moveScript.IsGuarding;
         
-        // Set the IsMoving parameter
-        animator.SetBool("IsMoving", isMoving);
+        // Set the IsRunning parameter
+        animator.SetBool("IsRunning", IsRunning);
         
         // Set the Attack parameter
         animator.SetBool("IsAttacking", moveScript.IsAttacking);

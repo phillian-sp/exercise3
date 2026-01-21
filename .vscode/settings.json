@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "CS146-Exercise3.sln"
+    "dotnet.defaultSolution": "exercise3.sln"
 }
